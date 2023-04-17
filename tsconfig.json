@@ -23,5 +23,5 @@
       "@lib/*": ["src/lib/*"],
     }
   },
-  "include": ["src", "scripts"],
+  "include": ["src", "scripts", "__tests__"],
 }
