@@ -1,4 +1,4 @@
-import { sum } from "../src/pages/content/sum";
+import { sum } from "@pages/content/sum";
 
 describe("sum", () => {
   it("should add up", () => {
