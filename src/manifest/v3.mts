@@ -68,7 +68,7 @@ function getManifestV3(pageDirMap: { [x: string]: any }): ManifestTypeV3 {
   if (pages.indexOf("content") > -1) {
     manifest.content_scripts = [
       {
-        matches: ["http://*/*", "https://*/*", "<all_urls>"],
+        matches: ["https://*.google.com/doodles"],
         js: [pageDirMap["content"]],
         css: pageDirMap["content-css"],
         run_at: "document_start",
