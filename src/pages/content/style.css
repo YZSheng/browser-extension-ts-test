@@ -1,3 +1,8 @@
-body {
-  background: pink !important;
+.chatgic main > div > .h-full,
+.chatgic main .flex.flex-col.items-center {
+  background-color: #071e49 !important;
+}
+
+.chatgic .px-3.pt-2.pb-3.text-center {
+  background-color: #8a5d24 !important;
 }
