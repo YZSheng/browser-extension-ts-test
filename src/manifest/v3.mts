@@ -12,6 +12,7 @@ const manifest: ManifestTypeV3 = {
   icons: {
     "128": "public/icon-128.png",
   },
+  permissions: ["storage"],
   web_accessible_resources: [
     {
       resources: ["public/*", "assets/*"],
