@@ -11,7 +11,8 @@
   "scripts": {
     "start": "ts-node-esm scripts/build.ts --dev",
     "build": "ts-node-esm scripts/build.ts",
-    "test": "jest"
+    "test": "jest",
+    "typecheck": "tsc -b"
   },
   "type": "module",
   "dependencies": {
