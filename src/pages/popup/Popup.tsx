@@ -1,15 +1,14 @@
 import React from "react";
 
 export default function Popup(): JSX.Element {
-  // TODO: Move initial setting of state outside to content
   const [checked, setChecked] = React.useState<boolean>(false);
   const handleStatus = async (checked: boolean) => {
-    const tabs = await chrome.tabs.query({
+    const [tab] = await chrome.tabs.query({
       active: true,
       currentWindow: true,
     });
-    if (tabs.length) {
-      chrome.tabs.sendMessage(tabs[0].id as number, {
+    if (tab?.id) {
+      chrome.tabs.sendMessage(tab.id, {
         chatGICStatus: checked,
       });
     }
